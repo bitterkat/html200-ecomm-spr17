@@ -72,6 +72,17 @@ h3 {
   padding: 5%;
 }
 
+.nav-container ul {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nav-container li {
+  padding: 2%;
+}
 
 .item-container {
   display: -webkit-flex;
