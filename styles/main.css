@@ -11,21 +11,31 @@ body {
 }
 
 p {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  /*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
   font-weight: lighter;
   color: #2d2d2d;
+  padding-top: .75rem;
 }
 
 /* TODO: size images manually so this is not necessary */
 img {
   max-height: 20rem;
-  max-width: 100%;
 }
 
 /***************** NAV *****************/
 
 nav a:hover {
   text-decoration: underline;
+}
+
+nav ul {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  padding: 1.5rem;
 }
 
 /**************** HERO *****************/
@@ -57,6 +67,7 @@ section {
 
 h2 {
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   font-size: 2rem;
   text-align: center;
   color: #2d2d2d;
@@ -64,44 +75,26 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  text-align: center;
+  /*text-align: center;*/
   color: #2d2d2d;
-}
-
-.container {
-  width: 96%;
-  padding: 2rem;
-}
-
-nav ul {
-  display: -webkit-flex;
-  display: flex;
-  /*flex-direction: row;*/
-  justify-content: flex-end;
-  /*flex-wrap: wrap;*/
-}
-
-nav li {
-  padding: .5rem;
 }
 
 .item-container {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  align-content: space-around;
+  /*align-content: space-around;*/
   flex-wrap: wrap;
 }
 
 .flex-item {
   /*flex-grow: 1;*/
   flex-shrink: 1;
-  flex-basis: 33%;
-  padding: 2%;
+  flex-basis: 50%;
+  justify-content: center;
+  padding: 2rem;
 }
 
-.flex-item p{
-  width:100%;
-  text-align:center:
-  color: red;
+.flex-item img {
+  padding: .5rem;
 }
