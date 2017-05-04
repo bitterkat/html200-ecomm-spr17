@@ -24,7 +24,6 @@
 
 <body>
   <div class="container">
-
     <header>
       <img src="images/logo-scarfcat.png" alt="dapper cartoon cat wearing a scarf">
       <h1>
@@ -33,7 +32,7 @@
         <span class="logo-w">W</span>arehouse
       </h1>
 
-      <nav>
+      <nav class="navbar navbar-default navbar-fixed-top">
         <ul>
           <li><a href="#">Hats</a></li>
           <li><a href="#">Gloves</a></li>
@@ -47,7 +46,7 @@
 
     <main>
       <aside>
-        <form name="customerEmail" onsubmit="getEmail();">
+        <form class="form-aside" name="customerEmail" onsubmit="getEmail();">
           <label>Sign up for our mailing list:
             <input type="email" name="email">
           </label>

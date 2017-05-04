@@ -1,13 +1,14 @@
 * {
-    /*margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;*/
+    font-family: sans-serif;
   }
 
 body {
   font-size: 100%;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  padding-top: 70px;
 }
 
 p {
@@ -25,6 +26,10 @@ img {
 
 /***************** NAV *****************/
 
+nav a {
+  text-decoration: none;
+}
+
 nav a:hover {
   text-decoration: underline;
 }
@@ -32,7 +37,7 @@ nav a:hover {
 nav ul {
   display: -webkit-flex;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 nav li {
@@ -43,6 +48,7 @@ nav li {
 
 header img {
   max-height: 6rem;
+  padding-right: 5px;
   float: left;
 }
 
@@ -52,7 +58,11 @@ h1 .logo-w {
 
 /**************** ASIDE ****************/
 
-input[type="submit"] {
+.form-aside {
+  float: right;
+}
+
+  input[type="submit"] {
   padding: .25rem;
   background-color: #3D7FCF;
   border: 1px solid #3D7FCF;
@@ -68,7 +78,7 @@ section {
 }
 
 h2 {
-  padding-top: 1.5rem;
+  padding-top: 3rem;
   padding-bottom: 1.5rem;
   font-size: 2rem;
   text-align: center;
