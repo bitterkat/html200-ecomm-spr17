@@ -49,11 +49,17 @@ nav li {
 header img {
   max-height: 6rem;
   padding-right: 5px;
-  float: left;
+  /*float: left;*/
+}
+
+h1 {
+    color: blue;
 }
 
 h1 .logo-w {
   font-size: 3.5rem;
+  display: inline;
+  /*color: blue;*/
 }
 
 /**************** ASIDE ****************/
@@ -87,7 +93,7 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  text-align: center;
+  /*text-align: center;*/
   color: #2d2d2d;
 }
 
@@ -95,8 +101,6 @@ h3 {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  /*justify-content: center;*/
-  /*align-content: space-between;*/
   flex-wrap: wrap;
   margin: 0 -5px;
 }
@@ -104,14 +108,16 @@ h3 {
 .flex-item {
   /*flex-grow: 1;*/
   /*flex-shrink: 1;*/
-  flex-basis: 31.41593%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-basis: 32%;
   padding: 20px;
   border: 1px solid gray;
   margin: 10px 5px;
-  align: left;
 }
 
 .flex-item img {
- /*align-self: center;*/
- padding: 5px;
+  padding-bottom: .75rem;
+  max-height: 100%;
 }
