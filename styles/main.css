@@ -20,8 +20,8 @@ p {
 
 /* TODO: size images manually so this is not necessary */
 img {
-  /*max-height: 15rem;*/
-  max-width: 100%;
+  max-height: 20rem;
+  /*max-width: 100%;*/
 }
 
 /***************** NAV *****************/
@@ -104,27 +104,29 @@ h3 {
 }
 
 .item-container {
-  display: -webkit-flex;
+  /*display: -webkit-flex;*/
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 31.77777%;
+  /*flex-wrap: wrap;*/
   /*margin: 0 -5px;*/
 }
 
 .flex-item {
   /*flex-grow: 2;*/
   /*flex-shrink: 1;*/
-  display: flex;
+  /*display: flex;
   align-content: center;
   flex-direction: column;
   flex-basis: 31.77777%;
   padding: 1.75rem;
   border: 1px solid gray;
-  margin: .5rem .5rem;
+  margin: .5rem .5rem;*/
 }
 
-.flex-item img {
+.item-container img {
   padding: 1rem;
+  width: 75%;
   /*max-height: 100%;*/
   /*max-width: 100%;*/
 }
