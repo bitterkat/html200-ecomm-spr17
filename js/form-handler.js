@@ -18,13 +18,20 @@ function addToCart(id,name) {
   cart.push({singleProduct});
   console.log(singleProduct);
   console.log(cart.length);
+  return cart;
 }
 
 function removeFromCart(id,name) {
   event.preventDefault();
-  var singleProduct = {name: name, id: id};
-  // to do: look for product id in cart and delete it from index
-  cart.pop({singleProduct}); // don't use pop here
-  console.log(singleProduct);
-  console.log(cart.length);
+//   var singleProduct = {name: name, id: id};
+//   if (cart.length == 0) {
+//     console.log("nothing in cart");
+//   }
+//   else if //look for productid and find it's index, then splice it
+//   console.log("removed " + singleProduct);
+// } else {
+//   console.log("product not in cart");
 }
+
+  // console.log(singleProduct);
+  // console.log(cart.length);
