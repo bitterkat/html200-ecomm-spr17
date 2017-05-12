@@ -16,6 +16,10 @@ p {
   padding: .5rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 /***************** NAV *****************/
 
 nav {
@@ -170,6 +174,7 @@ h3 {
   .item-container {
     padding: .25rem;
     margin: .25rem;
+    max-width: 100%;
   }
 }
 
