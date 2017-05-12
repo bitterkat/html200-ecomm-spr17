@@ -2,18 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family: sans-serif;*/
   }
-
-/*article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section{
-      display:block;
-}*/
 
 body {
   font-size: 100%;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
-  /*padding-top: 70px;*/
 }
 
 p {
@@ -21,12 +14,6 @@ p {
   font-weight: lighter;
   color: #2d2d2d;
   padding: .5rem;
-}
-
-/* TODO: size images manually so this is not necessary */
-img {
-  /*max-height: 15rem;*/
-  /*max-width: 100%;*/
 }
 
 /***************** NAV *****************/
@@ -45,20 +32,19 @@ nav a:hover {
 }
 
 nav ul {
-  /*display: -webkit-flex;*/
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-nav li {
-  padding: .75rem;
 }
 
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
   }
+}
+
+nav li {
+  padding: .75rem;
 }
 
 @media (max-width: 600px) {
@@ -85,12 +71,12 @@ h1 {
     color: #3F7FBF;
     font-size: 1.75rem;
     font-weight: bold;
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   text-align: center;
   }
 }
@@ -99,7 +85,7 @@ h1 .logo-w {
   font-size: 3.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   h1 .logo-w {
   font-size: 3.75rem;
   }
@@ -118,9 +104,8 @@ h1 .logo-w {
 
 aside {
   padding-top: 1.5rem;
-  /*width: 20%;
-  float: left;*/
 }
+
   input[type="submit"] {
   padding: .5rem;
   background-color: #3D7FCF;
@@ -155,7 +140,6 @@ h3 {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0 1.5rem;
-  /*float: left;*/
 }
 
 .item-container {
@@ -194,11 +178,5 @@ h3 {
     padding: .25rem;
     margin: .25rem;
     flex-basis: 30%;
-  }
-}
-
-@media (max-width: 1100px) {
-  .item-container img {
-    /*width: 200px;*/
   }
 }
