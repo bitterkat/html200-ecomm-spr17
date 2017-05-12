@@ -84,8 +84,7 @@ header img {
 
 @media (max-width: 600px) {
   header img {
-    /*padding-left: 2rem;*/
-    max-height: 100%;
+    max-height: 20rem;
   }
 }
 
@@ -194,12 +193,6 @@ h3 {
   }
 }
 
-@media (max-width: 600px) {
-  .item-container img {
-    /*max-width: 100%;*/
-  }
-}
-
 @media (max-width: 1100px) {
   .item-container {
     padding: .25rem;
@@ -210,6 +203,6 @@ h3 {
 
 @media (max-width: 1100px) {
   .item-container img {
-    width: 200px;
+    /*width: 200px;*/
   }
 }
