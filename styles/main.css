@@ -82,6 +82,12 @@ header img {
   float: left;
 }
 
+@media (max-width: 600px) {
+  header img {
+    padding-left: 10%;
+  }
+}
+
 h1 {
     color: #3F7FBF;
     font-size: 1.75rem;
