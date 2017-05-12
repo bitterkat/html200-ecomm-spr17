@@ -63,8 +63,7 @@ nav li {
 /**************** HERO *****************/
 
 header img {
-  padding-right: .5rem;
-  padding-top: .5rem;
+  padding: .5rem .5rem 0 1rem;
 }
 
 h1 {
@@ -103,7 +102,7 @@ h1 .logo-w {
 /**************** ASIDE ****************/
 
 aside {
-  padding-top: 1.5rem;
+  padding: 1.5rem .25rem 0 1rem;
 }
 
   input[type="submit"] {
