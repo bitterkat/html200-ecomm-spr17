@@ -162,7 +162,7 @@ h3 {
 
 @media (max-width: 600px) {
   .items {
-    flex-direction: column;
+    /*flex-direction: column;*/
     margin: 0 .5rem;
   }
 }
