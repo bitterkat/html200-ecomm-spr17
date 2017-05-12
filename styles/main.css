@@ -183,7 +183,7 @@ h3 {
 
 @media (max-width: 600px) {
   .item-container img {
-    max-width: 100%;
+    /*max-width: 100%;*/
   }
 }
 
