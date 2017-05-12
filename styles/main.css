@@ -76,35 +76,27 @@ nav li {
 /**************** HERO *****************/
 
 header img {
-  max-height: 7rem;
+  max-height: 9rem;
   padding-right: .5rem;
   padding-top: .5rem;
-  float: left;
-}
-
-@media (max-width: 600px) {
-  header img {
-    max-height: 100%;
-  }
 }
 
 h1 {
     color: #3F7FBF;
     font-size: 1.75rem;
     font-weight: bold;
-    /*font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, Helvetica, sans-serif;*/
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 600px) {
   h1 {
   font-size: 1.75rem;
+  text-align: center;
   }
 }
 
 h1 .logo-w {
   font-size: 3.5rem;
-  /*display: inline;*/
-  /*color: blue;*/
 }
 
 @media screen and (max-width: 600px) {
@@ -113,10 +105,14 @@ h1 .logo-w {
   }
 }
 
+.logo {
+  display: flex;
+  align-items: flex-end;
+}
+
 .logo-break {
   display: block;
 }
-
 
 /**************** ASIDE ****************/
 
