@@ -160,6 +160,12 @@ h3 {
   align-items: center;
 }
 
+.item-container button {
+  margin-left: .5rem;
+  padding: .5rem;
+  border-radius: 5px;
+}
+
 @media (max-width: 600px) {
   .items {
     /*flex-direction: column;*/
@@ -172,6 +178,12 @@ h3 {
     padding: .25rem;
     margin: .25rem;
     flex-basis: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .item-container img {
+    max-width: 100%;
   }
 }
 
@@ -188,19 +200,3 @@ h3 {
     width: 200px;
   }
 }
-
-@media (max-width: 600px) {
-  .item-container img {
-    max-width: 100%;
-  }
-}
-
-.item-container button {
-  margin-left: .5rem;
-  padding: .5rem;
-  border-radius: 5px;
-}
-
-/*.item-info {
-  margin-top: auto;
-}*/
