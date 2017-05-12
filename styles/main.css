@@ -16,10 +16,6 @@ p {
   padding: .5rem;
 }
 
-img {
-  /*max-width: 100%;*/
-}
-
 /***************** NAV *****************/
 
 nav {
@@ -54,6 +50,7 @@ nav li {
 @media (max-width: 600px) {
   nav li {
     display: block;
+    border: 1px solid white;
     width: 100%;
     text-align: center;
   }
