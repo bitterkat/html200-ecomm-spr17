@@ -76,7 +76,7 @@ h1 {
 
 @media (max-width: 600px) {
   h1 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   text-align: center;
   color: green;
   }
@@ -88,7 +88,7 @@ h1 .logo-w {
 
 @media (max-width: 600px) {
   h1 .logo-w {
-  font-size: 3.65rem;
+  font-size: 3.25rem;
   }
 }
 
