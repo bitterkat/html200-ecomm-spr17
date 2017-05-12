@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <header>
       <nav class="row">
         <ul class="col-md-12">
@@ -50,8 +50,8 @@
     <main>
       <div class="row">
         <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-2 col-sm-12">
+        <div class="row"><!-- nested row -->
+          <div class="col-md-2 col-xs-12">
             <aside>
               <form name="customerEmail" onsubmit="getEmail()">
                 <div class="form-group">
@@ -64,9 +64,10 @@
             </aside>
           </div><!-- end column -->
 
-          <div class="col-md-10 col-sm-12">
-            <h2>Scarves</h2>
+          <div class="col-md-10 col-sm-12 col-xs-12"><!-- nested row -->
+
             <section class="items">
+              <h2>Scarves</h2>
               <div class="item-container">
                 <h3>Reversible Plaid</h3>
                 <div class="item-image">
@@ -183,8 +184,8 @@
               </div>
             </div>
           </section>
-        </div>
-      </div>
+        </div><!-- close nested row -->
+      </div> <!-- close row -->
   </main>
 
 </div>

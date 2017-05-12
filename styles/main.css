@@ -47,11 +47,26 @@ nav a:hover {
 nav ul {
   /*display: -webkit-flex;*/
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
 nav li {
   padding: .75rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  nav li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .fa-shopping-cart {
@@ -94,6 +109,8 @@ h1 .logo-w {
 
 aside {
   padding-top: 1.5rem;
+  /*width: 20%;
+  float: left;*/
 }
   input[type="submit"] {
   padding: .5rem;
@@ -113,7 +130,7 @@ section {
 h2 {
   padding-bottom: .75rem;
   font-size: 2rem;
-  text-align: center;
+  /*text-align: center;*/
   color: #2d2d2d;
 }
 
@@ -127,18 +144,36 @@ h3 {
 .items {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   margin: 0 1.5rem;
+  /*float: left;*/
+}
+
+.items h2 {
+  text-align: center;
+  width: 100%;
 }
 
 .item-container {
   padding: 1.25rem;
   margin: .5rem;
-  flex-basis: 31.333333%;
+  /*max-width: 31%;*/
   display: flex;
   flex-direction: column;
+  flex-basis: 31.333333%;
   border: 1px solid #cccdd0;
   border-radius: 5px;
   align-items: center;
+}
+
+@media (max-width: 400px) {
+  .item-container {
+    flex-basis: 90%;
+  }
+}
+
+.item-container img {
+
 }
 
 .item-container button {
