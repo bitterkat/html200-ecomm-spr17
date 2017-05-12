@@ -167,13 +167,24 @@ h3 {
 }
 
 @media (max-width: 400px) {
+  .items {
+    flex-direction: column;
+    margin: 0 .5rem;
+  }
+}
+
+@media (max-width: 400px) {
   .item-container {
+    padding: .25rem;
+    margin: .25rem;
     flex-basis: 90%;
   }
 }
 
-.item-container img {
-
+@media (max-width: 400px) {
+  .item-container img {
+    max-width: 100%;
+  }
 }
 
 .item-container button {
