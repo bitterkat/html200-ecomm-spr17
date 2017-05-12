@@ -69,26 +69,26 @@ header img {
 
 h1 {
     color: #3F7FBF;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: bold;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Teko', sans-serif;
 }
 
 @media (max-width: 600px) {
   h1 {
-  font-size: 1.75rem;
+  font-size: 1.9rem;
   text-align: center;
   color: red;
   }
 }
 
 h1 .logo-w {
-  font-size: 3.5rem;
+  font-size: 3.75rem;
 }
 
 @media (max-width: 600px) {
   h1 .logo-w {
-  font-size: 3.5rem;
+  font-size: 3.65rem;
   }
 }
 
