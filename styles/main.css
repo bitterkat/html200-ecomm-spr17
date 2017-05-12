@@ -76,7 +76,7 @@ h1 {
 
 @media (max-width: 600px) {
   h1 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-align: center;
   }
 }
@@ -87,7 +87,7 @@ h1 .logo-w {
 
 @media (max-width: 600px) {
   h1 .logo-w {
-  font-size: 3.75rem;
+  font-size: 3.65rem;
   }
 }
 
