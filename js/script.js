@@ -1,3 +1,5 @@
+var cart = [];
+
 var products = [
   {
     "name": "Reversible Plaid",
@@ -49,3 +51,34 @@ var products = [
   }
 ]
 
+
+
+
+
+function addToCart(name) {
+  event.preventDefault();
+  cart.push(name);
+  // var id = products
+  // var singleProduct = products[id];
+  // cart.push({singleProduct});
+  // console.log(singleProduct);
+  // var product2 = products[0];
+  // console.log(singleProduct);
+  console.log(cart);
+  // return cart;
+}
+
+function removeFromCart(id,name) {
+  event.preventDefault();
+//   var singleProduct = {name: name, id: id};
+//   if (cart.length == 0) {
+//     console.log("nothing in cart");
+//   }
+//   else if //look for productid and find it's index, then splice it
+//   console.log("removed " + singleProduct);
+// } else {
+//   console.log("product not in cart");
+}
+
+  // console.log(singleProduct);
+  // console.log(cart.length);
