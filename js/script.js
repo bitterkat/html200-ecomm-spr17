@@ -51,34 +51,32 @@ var products = [
   }
 ]
 
-
-
-
-
 function addToCart(name) {
   event.preventDefault();
   cart.push(name);
-  // var id = products
-  // var singleProduct = products[id];
-  // cart.push({singleProduct});
-  // console.log(singleProduct);
-  // var product2 = products[0];
-  // console.log(singleProduct);
-  console.log(cart);
-  // return cart;
+  console.log(cart.length);
+  return cart;
 }
 
-function removeFromCart(id,name) {
+function removeFromCart(name) {
   event.preventDefault();
-//   var singleProduct = {name: name, id: id};
-//   if (cart.length == 0) {
-//     console.log("nothing in cart");
-//   }
-//   else if //look for productid and find it's index, then splice it
-//   console.log("removed " + singleProduct);
-// } else {
-//   console.log("product not in cart");
+  removeItem = cart.indexOf(name);
+    if (removeItem > -1) {
+      cart.splice(removeItem, 1);
+      console.log("removed " + name);
+    } else {
+      console.log("product not in cart");
+    }
+  console.log(cart.length);
+  return cart;
 }
 
-  // console.log(singleProduct);
-  // console.log(cart.length);
+function showCart(cart) {
+  event.preventDefault();
+  if (cart.length > 0) {
+    console.log("contents of your cart: " + cart);
+  } else {
+    console.log("your cart is empty");
+  }
+  return cart;
+}
