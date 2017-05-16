@@ -70,4 +70,13 @@ Lesson 09:
 Each weekly assignment will be graded independently. There will not be a final grade for the entire project.
 
 ## Testing 
-[update this section with information about the testing steps you took to ensure site quality]
+
+- For html, I first add the major sections and put junk text and images in place, then after saving and viewing the page in the browser via Atom's live-server, I start adding classes for styling and divs for layout, again, viewing the content in the browser (Chrome and Safari) for expected outcome. Finally, I run it through the W3C validator before pushing to Github.
+
+- For css, after each addition/edit, I save and view in the browser (Chrome and Safari) and inspect the markup to check for overlaps and make subtle changes to styling before going back and adjusting those changes in the css file. For @media changes, I use the Chrome "Viewport Dimension" extension to see my screen size and, again, inspect and adjust the elements before going back and making the changes in my css file. For flex and @media styling I use colors (text or background) to view changes and layouts. Finally, I check it in CSS Lint to make sure there are no errors before pushing to Github.
+
+- For anything with @media I also test the live Github version on my iPhone (Chrome and Safari) for expected layout/styling/responsiveness.
+
+- For scripts, I add a console.log message at each step to check for expected output and keep the console window open during the testing process. I test each function call separately to ensure they all interact as expected.
+
+
