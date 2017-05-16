@@ -60,6 +60,13 @@ nav li {
   color: white;
 }
 
+.cart-info p {
+  color: white;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  display: inline;
+}
+
 /**************** HERO *****************/
 
 header img {
@@ -162,5 +169,4 @@ h3 {
 .item-container button {
   margin-left: .5rem;
   padding: .5rem;
-  border-radius: 5px;
 }

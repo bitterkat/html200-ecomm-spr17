@@ -51,32 +51,26 @@ var products = [
   }
 ]
 
-function addToCart(name) {
+function toggleCart(id, name) { // add/remove an item from the cart
   event.preventDefault();
-  cart.push(name);
-  console.log(cart.length);
-  return cart;
-}
-
-function removeFromCart(name) {
-  event.preventDefault();
-  removeItem = cart.indexOf(name);
-    if (removeItem > -1) {
-      cart.splice(removeItem, 1);
-      console.log("removed " + name);
-    } else {
-      console.log("product not in cart");
+  var buttonBlock = document.getElementById(id);
+  itemIndex = cart.indexOf(name);
+    if (itemIndex == -1) { // if item isn't in cart
+      cart.push(name);
+      alert("You added '" + name + "' to your cart. Current items in your cart: " + cart.length);
+      buttonBlock.innerHTML = "remove item";
+    } else { // if item is in cart
+      cart.splice(name, 1);
+      alert("You removed '" + name + "' from your cart. Current items in your cart: " + cart.length);
+      buttonBlock.innerHTML = "add item";
     }
-  console.log(cart.length);
-  return cart;
+  showCart();
 }
 
-function showCart(cart) {
+function showCart() {
   event.preventDefault();
-  if (cart.length > 0) {
-    console.log("contents of your cart: " + cart);
-  } else {
-    console.log("your cart is empty");
-  }
-  return cart;
+  var cartTotal = document.getElementById("item-count");
+  cartTotal.innerHTML = "<p>(" + cart.length + ")</p>";
 }
+
+window.onload = showCart;
