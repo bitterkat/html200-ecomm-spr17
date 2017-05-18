@@ -80,21 +80,8 @@ h1 {
     font-family: 'Teko', sans-serif;
 }
 
-@media (max-width: 600px) {
-  h1 {
-  font-size: 1.9rem;
-  text-align: center;
-  }
-}
-
 h1 .logo-w {
   font-size: 3.75rem;
-}
-
-@media (max-width: 600px) {
-  h1 .logo-w {
-  font-size: 3.65rem;
-  }
 }
 
 .logo {
@@ -104,6 +91,28 @@ h1 .logo-w {
 
 .logo-break {
   display: block;
+}
+
+@media (max-width: 600px) {
+  header img {
+    padding: .75rem 1rem 0 1.25rem;
+  }
+  h1 {
+  font-size: 1.85rem;
+  text-align: center;
+  }
+  h1 .logo-w {
+  font-size: 3.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h1 .logo-w {
+  font-size: 3rem;
+  }
 }
 
 /**************** ASIDE ****************/
@@ -161,16 +170,16 @@ h3 {
   display: flex;
   flex-direction: column;
   flex-basis: 31.33333%;
+  max-width: 31%;
   border: 1px solid #cccdd0;
   border-radius: 5px;
   align-items: center;
-  /*max-width: 31%;*/
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .item-container {
-    /*flex-basis: 45%;
-    max-width: 45%;*/
+    flex-basis: 45%;
+    max-width: 45%;
   }
 }
 
