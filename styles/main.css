@@ -168,17 +168,17 @@ h3 {
 }
 
 @media (max-width: 900px) {
-    .item-container {
-        /*flex-basis: 45%;
-        max-width: 45%;*/
-      }
+  .item-container {
+    /*flex-basis: 45%;
+    max-width: 45%;*/
+  }
 }
 
 @media (max-width: 600px) {
-    .item-container {
-        flex-wrap: nowrap;
-        max-width: 100%;
-      }
+  .item-container {
+    flex-wrap: nowrap;
+    max-width: 100%;
+  }
 }
 
 .item-container button {
