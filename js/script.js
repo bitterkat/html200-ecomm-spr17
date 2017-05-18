@@ -53,8 +53,8 @@ var products = [
 
 function toggleCart(id, name) { // add/remove an item from the cart
   event.preventDefault();
-  var buttonBlock = document.getElementById(id);
-  itemIndex = cart.indexOf(name);
+  var buttonBlock = document.getElementById(id); // this is the add/remove button
+  var itemIndex = cart.indexOf(name);
     if (itemIndex == -1) { // if item isn't in cart
       cart.push(name);
       alert("You added '" + name + "' to your cart. Current items in your cart: " + cart.length);
