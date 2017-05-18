@@ -1,6 +1,4 @@
-console.log("I am the handler of forms");
-
-var cart = [];
+// console.log("I am the handler of forms");
 
 function getEmail () {
   event.preventDefault();
